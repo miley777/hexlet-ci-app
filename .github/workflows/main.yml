@@ -10,7 +10,7 @@ jobs:
       - run: npm install -g bats
       - run: touch Makefile
       #- uses: github/github-actions/autobuild@3
-      - run: echo "make setup: install build" > Makefile
+      - run: echo "setup: install build" > Makefile
       #- run: echo "make test" > Makefile
       #- run: echo "make lint" > Makefile
       - name: run setup
