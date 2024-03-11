@@ -5,5 +5,6 @@ name: start project
       steps:
         - run: make setup
         - run: make start
-        - run: make test
-        - run: make lint
+        test:
+          - run: make test
+          - run: make lint
