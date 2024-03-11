@@ -8,7 +8,10 @@ jobs:
         with:
           node-version: '18.x'
       - run: npm install -g bats
-      - run: make build
+      - run: touch Makefile
+      - run: echo "make setup" > Makefile
+      - run: echo "make test" > Makefile
+      - run: echo "make lint" > Makefile
       - name: run tests
         run: make setup
       - name: run tests
