@@ -8,8 +8,6 @@ jobs:
         with:
           node-version: '18.x'
       - run: npm install -g bats
-      #- uses: actions/setup-npm@v6
-      - run: makefile install
       - name: run tests
         run: make setup
       - name: run tests
