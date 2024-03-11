@@ -4,7 +4,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/update-node@v18
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '18.x'
       - run: npm install
       - run: makefile install
       - name: run tests
