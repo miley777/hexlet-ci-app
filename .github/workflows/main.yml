@@ -1,16 +1,15 @@
 name: start project
 on: push
-  jobs:
-    build:
-      runs-on: ubuntu-latest
-      steps:
-        - uses: actions/setup-node@v18
-        - uses: actions/setup-npm@v6
-        - uses: actions/setup-make
-        - name: run tests
-          run: make setup
-          run: make start
-        - name: run tests
-          run: make test
-        - name: run linter
-          run: make lint
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-node@v18
+      - uses: actions/setup-npm@v6
+      - uses: actions/setup-make@v
+      - name: run tests
+        run: make setup
+      - name: run tests
+        run: make test
+      - name: run linter
+        run: make lint
