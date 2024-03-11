@@ -8,7 +8,8 @@ jobs:
         with:
           node-version: '18.x'
       - run: npm install -g bats
-      - uses: github/github-actions/autobuild@3
+      - run: touch Makefile
+      #- uses: github/github-actions/autobuild@3
       #- run: echo "make setup" > Makefile
       #- run: echo "make test" > Makefile
       #- run: echo "make lint" > Makefile
