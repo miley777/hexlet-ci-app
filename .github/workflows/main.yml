@@ -3,14 +3,13 @@ on: push
 jobs:
   build:
     runs-on: ubuntu-latest
+    
     steps:
       - uses: actions/setup-node@v4
         with:
           node-version: '18.x'
       - run: npm install -g bats
-      - run: touch Makefile
       #- uses: github/github-actions/autobuild@3
-      - run: echo "setup: install build" > Makefile
       #- run: echo "make test" > Makefile
       #- run: echo "make lint" > Makefile
       - name: run setup
