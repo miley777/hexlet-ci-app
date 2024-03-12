@@ -9,19 +9,15 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '20.x'
-      - run: npm install -g bats
+      #- run: npm install -g bats
       #- uses: github/github-actions/autobuild@3
       #- run: echo "make test" > Makefile
       #- run: echo "make lint" > Makefile
-      - name: run setup
-        run: |
-          make setup
-      - name: run start
-        run: |
-          make start
-      - name: run tests
-        run: | 
-          make test
-      - name: run linter
-        run: |
-          make lint
+      #- name: run setup
+      - run: make setup
+      #- name: run start
+      - run: make start
+      #- name: run tests
+      - run: make test
+      #- name: run linter
+      - run: make lint
