@@ -13,10 +13,14 @@ jobs:
       #- run: echo "make test" > Makefile
       #- run: echo "make lint" > Makefile
       - name: run setup
-        run: setup
+        run: |
+          make setup
       - name: run start
-        run: make start
+        run: |
+          make start
       - name: run tests
-        run: make test
+        run: | 
+          make test
       - name: run linter
-        run: make lint
+        run: |
+          make lint
