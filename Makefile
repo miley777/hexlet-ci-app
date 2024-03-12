@@ -1,5 +1,5 @@
 setup:
-  install build
+	install build
 
 install:
 	npm install
