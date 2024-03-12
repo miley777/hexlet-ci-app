@@ -1,4 +1,4 @@
-setup: 
+setup:
   install build
 
 install:
