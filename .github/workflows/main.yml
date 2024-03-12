@@ -13,7 +13,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
-      #- run: npm install -g bats
+      - run: npm install -g bats
       #- uses: github/github-actions/autobuild@3
       #- run: echo "make test" > Makefile
       #- run: echo "make lint" > Makefile
