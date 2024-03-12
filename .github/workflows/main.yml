@@ -14,16 +14,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
       - run: npm install -g bats
-      #- uses: github/github-actions/autobuild@3
-      #- run: echo "make test" > Makefile
-      #- run: echo "make lint" > Makefile
-      #- name: run setup
       - run: make setup
-      #- run: make install
-      #- run: make build
-      #- name: run start
       - run: make start
-      #- name: run tests
       - run: make lint
-      #- name: run linter
       - run: make test
