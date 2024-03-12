@@ -15,6 +15,8 @@ jobs:
       #- run: echo "make lint" > Makefile
       #- name: run setup
       - run: make setup
+      - run: make install
+      - run: make build
       #- name: run start
       - run: make start
       #- name: run tests
