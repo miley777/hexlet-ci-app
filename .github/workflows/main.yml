@@ -24,6 +24,6 @@ jobs:
       #- name: run start
       - run: make start
       #- name: run tests
-      - run: make test
-      #- name: run linter
       - run: make lint
+      #- name: run linter
+      - run: make test
