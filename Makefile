@@ -1,4 +1,4 @@
-setup:  install build
+setup: install build
 
 install:
 	npm install
