@@ -9,6 +9,8 @@ jobs:
         node-version: [20.x]
     steps:
       - uses: actions/checkout@v4
+        env:
+          SNYK_TOKEN: 99c040d1-222e-4c16-afd5-8b041bbdc321
       - uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
